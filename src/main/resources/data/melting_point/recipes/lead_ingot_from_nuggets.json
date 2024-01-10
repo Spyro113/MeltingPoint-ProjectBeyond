@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lead_ingot",
+  "key": {
+    "#": {
+      "item": "melting_point:lead_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "melting_point:lead_ingot"
+  }
+}

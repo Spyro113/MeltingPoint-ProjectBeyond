@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "I": {
+      "tag": "melting_point:iron_lead_interchangeable_ingots"
+    }
+  },
+  "pattern": [
+    "I I",
+    "ICI",
+    " I "
+  ],
+  "result": {
+    "item": "minecraft:hopper"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "tungsten_ingot",
+  "ingredient": {
+    "item": "melting_point:tungsten_ore"
+  },
+  "result": "melting_point:tungsten_ingot"
+}

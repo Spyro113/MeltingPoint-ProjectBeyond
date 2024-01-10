@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "melting_point:block/aged_bronze_block"
+  }
+}

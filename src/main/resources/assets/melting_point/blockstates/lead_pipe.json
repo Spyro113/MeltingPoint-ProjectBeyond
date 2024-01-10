@@ -1,0 +1,520 @@
+{
+  "multipart": [
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down"},"when": {"axis":"y","north":"false","east":"false","west":"false","up":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 90},"when": {"axis":"y","east":"false","north":"false","south":"false","up":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 180},"when": {"axis":"y","south":"false","east":"false","west":"false","up":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 270},"when": {"axis":"y","west":"false","north":"false","south":"false","up":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 90},"when": {"axis":"y","down":"false","north":"false","south":"false","east":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 270},"when": {"axis":"y","up":"false","north":"false","south":"false","east":"false","west":"false"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening"},"when": {"axis":"z","north":"false","east":"false", "west":"false","up":"false", "down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 90},"when": {"axis":"z","east":"false","north":"false","south":"false","up":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 180},"when": {"axis":"z","south":"false","east":"false","west":"false","up":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 270},"when": {"axis":"z","west":"false","north":"false","south":"false","up":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 90},"when": {"axis":"z","down":"false","north":"false","south":"false","east":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 270},"when": {"axis":"z","up":"false","north":"false","south":"false","east":"false","west":"false"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right"},"when": {"axis":"x","north":"false","east":"false", "west":"false","up":"false", "down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 90},"when": {"axis":"x","east":"false","north":"false","south":"false","up":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 180},"when": {"axis":"x","south":"false","east":"false","west":"false","up":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 270},"when": {"axis":"x","west":"false","north":"false","south":"false","up":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right","x":90},"when": {"axis":"x","down":"false","north":"false","south":"false","east":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right","x": 270},"when": {"axis":"x","up":"false","north":"false","south":"false","east":"false","west":"false"}},
+
+
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening"},"when": {"axis":"y","north":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left"},"when": {"axis":"y","north":"false","east":"true", "west":"false","up":"false", "down":"false","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right"},"when": {"axis":"y","north":"false","east":"false", "west":"true","up":"false", "down":"false","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right"},"when": {"axis":"y","north":"false","east":"true", "west":"true","up":"false", "down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down"},"when": {"axis":"y","north":"false","east":"false", "west":"false","up":"true", "down":"false","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left"},"when": {"axis":"y","north":"false","east":"true", "west":"false","up":"true", "down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right"},"when": {"axis":"y","north":"false","east":"false", "west":"true","up":"true", "down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right"},"when": {"axis":"y","north":"false","east":"true", "west":"true","up":"true", "down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down"},"when": {"axis":"y","north":"false","east":"false", "west":"false","up":"false", "down":"true","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left"},"when": {"axis":"y","north":"false","east":"true", "west":"false","up":"false", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right"},"when": {"axis":"y","north":"false","east":"false", "west":"true","up":"false", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right"},"when": {"axis":"y","north":"false","east":"true", "west":"true","up":"false", "down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down"},"when": {"axis":"y","north":"false","east":"false", "west":"false","up":"true", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left"},"when": {"axis":"y","north":"false","east":"true", "west":"false","up":"true", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right"},"when": {"axis":"y","north":"false","east":"false", "west":"true","up":"true", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right"},"when": {"axis":"y","north":"false","east":"true", "west":"true","up":"true", "down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left"},"when": {"axis":"y","north":"false","east":"true", "west":"false","up":"false", "down":"false","south":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right"},"when": {"axis":"y","north":"false","east":"false", "west":"true","up":"false", "down":"false","south":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up"},"when": {"axis":"y","north":"false","east":"false", "west":"false","up":"true", "down":"false","south":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down"},"when": {"axis":"y","north":"false","east":"false", "west":"false","up":"false", "down":"true","south":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 90},"when": {"axis":"y","east":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 90},"when": {"axis":"y","east":"false","north":"true","south":"false","up":"false","down":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 90},"when": {"axis":"y","east":"false","north":"false","south":"true","up":"false","down":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 90},"when": {"axis":"y","east":"false","north":"true","south":"true","up":"false","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 90},"when": {"axis":"y","east":"false","north":"false","south":"false","up":"true","down":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "y": 90},"when": {"axis":"y","east":"false","north":"true","south":"false","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "y": 90},"when": {"axis":"y","east":"false","north":"false","south":"true","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 90},"when": {"axis":"y","east":"false","north":"true","south":"true","up":"true","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 90},"when": {"axis":"y","east":"false","north":"false","south":"false","up":"false","down":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "y": 90},"when": {"axis":"y","east":"false","north":"true","south":"false","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "y": 90},"when": {"axis":"y","east":"false","north":"false","south":"true","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 90},"when": {"axis":"y","east":"false","north":"true","south":"true","up":"false","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 90},"when": {"axis":"y","east":"false","north":"false","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 90},"when": {"axis":"y","east":"false","north":"true","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 90},"when": {"axis":"y","east":"false","north":"false","south":"true","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "y": 90},"when": {"axis":"y","east":"false","north":"true","south":"true","up":"true","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "y": 90},"when": {"axis":"y","east":"false","north":"true","south":"false","up":"false","down":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "y": 90},"when": {"axis":"y","east":"false","north":"false","south":"true","up":"false","down":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "y": 90},"when": {"axis":"y","east":"false","north":"false","south":"false","up":"true","down":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "y": 90},"when": {"axis":"y","east":"false","north":"false","south":"false","up":"false","down":"true","west":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 180},"when": {"axis":"y","south":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 180},"when": {"axis":"y","south":"false","east":"true","west":"false","up":"false","down":"false","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 180},"when": {"axis":"y","south":"false","east":"false","west":"true","up":"false","down":"false","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 180},"when": {"axis":"y","south":"false","east":"true","west":"true","up":"false","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 180},"when": {"axis":"y","south":"false","east":"false","west":"false","up":"true","down":"false","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "y": 180},"when": {"axis":"y","south":"false","east":"true","west":"false","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "y": 180},"when": {"axis":"y","south":"false","east":"false","west":"true","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 180},"when": {"axis":"y","south":"false","east":"true","west":"true","up":"true","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 180},"when": {"axis":"y","south":"false","east":"false","west":"false","up":"false","down":"true","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "y": 180},"when": {"axis":"y","south":"false","east":"true","west":"false","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "y": 180},"when": {"axis":"y","south":"false","east":"false","west":"true","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 180},"when": {"axis":"y","south":"false","east":"true","west":"true","up":"false","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 180},"when": {"axis":"y","south":"false","east":"false","west":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 180},"when": {"axis":"y","south":"false","east":"true","west":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 180},"when": {"axis":"y","south":"false","east":"false","west":"true","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "y": 180},"when": {"axis":"y","south":"false","east":"true","west":"true","up":"true","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "y": 180},"when": {"axis":"y","south":"false","east":"true","west":"false","up":"false","down":"false","north":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "y": 180},"when": {"axis":"y","south":"false","east":"false","west":"true","up":"false","down":"false","north":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "y": 180},"when": {"axis":"y","south":"false","east":"false","west":"false","up":"true","down":"false","north":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "y": 180},"when": {"axis":"y","south":"false","east":"false","west":"false","up":"false","down":"true","north":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 270},"when": {"axis":"y","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 270},"when": {"axis":"y","west":"false","north":"true","south":"false","up":"false","down":"false","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 270},"when": {"axis":"y","west":"false","north":"false","south":"true","up":"false","down":"false","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 270},"when": {"axis":"y","west":"false","north":"true","south":"true","up":"false","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 270},"when": {"axis":"y","west":"false","north":"false","south":"false","up":"true","down":"false","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "y": 270},"when": {"axis":"y","west":"false","north":"true","south":"false","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "y": 270},"when": {"axis":"y","west":"false","north":"false","south":"true","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 270},"when": {"axis":"y","west":"false","north":"true","south":"true","up":"true","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 270},"when": {"axis":"y","west":"false","north":"false","south":"false","up":"false","down":"true","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "y": 270},"when": {"axis":"y","west":"false","north":"true","south":"false","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "y": 270},"when": {"axis":"y","west":"false","north":"false","south":"true","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 270},"when": {"axis":"y","west":"false","north":"true","south":"true","up":"false","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 270},"when": {"axis":"y","west":"false","north":"false","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 270},"when": {"axis":"y","west":"false","north":"true","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 270},"when": {"axis":"y","west":"false","north":"false","south":"true","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "y": 270},"when": {"axis":"y","west":"false","north":"true","south":"true","up":"true","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "y": 270},"when": {"axis":"y","west":"false","north":"true","south":"false","up":"false","down":"false","east":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "y": 270},"when": {"axis":"y","west":"false","north":"false","south":"true","up":"false","down":"false","east":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "y": 270},"when": {"axis":"y","west":"false","north":"false","south":"false","up":"true","down":"false","east":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "y": 270},"when": {"axis":"y","west":"false","north":"false","south":"false","up":"false","down":"true","east":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 90},"when": {"axis":"y","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 90},"when": {"axis":"y","down":"false","north":"true","south":"false","east":"false","west":"false","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 90},"when": {"axis":"y","down":"false","north":"false","south":"true","east":"false","west":"false","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 90},"when": {"axis":"y","down":"false","north":"true","south":"true","east":"false","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 90},"when": {"axis":"y","down":"false","north":"false","south":"false","east":"true","west":"false","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "x": 90},"when": {"axis":"y","down":"false","north":"true","south":"false","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "x": 90},"when": {"axis":"y","down":"false","north":"false","south":"true","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "x": 90},"when": {"axis":"y","down":"false","north":"true","south":"true","east":"true","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 90},"when": {"axis":"y","down":"false","north":"false","south":"false","east":"false","west":"true","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "x": 90},"when": {"axis":"y","down":"false","north":"true","south":"false","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "x": 90},"when": {"axis":"y","down":"false","north":"false","south":"true","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "x": 90},"when": {"axis":"y","down":"false","north":"true","south":"true","east":"false","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "x": 90},"when": {"axis":"y","down":"false","north":"false","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "x": 90},"when": {"axis":"y","down":"false","north":"true","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "x": 90},"when": {"axis":"y","down":"false","north":"false","south":"true","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "x": 90},"when": {"axis":"y","down":"false","north":"true","south":"true","east":"true","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "x": 90},"when": {"axis":"y","down":"false","north":"true","south":"false","east":"false","west":"false","up":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "x": 90},"when": {"axis":"y","down":"false","north":"false","south":"true","east":"false","west":"false","up":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "x": 90},"when": {"axis":"y","down":"false","north":"false","south":"false","east":"true","west":"false","up":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "x": 90},"when": {"axis":"y","down":"false","north":"false","south":"false","east":"false","west":"true","up":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 270},"when": {"axis":"y","up":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 270},"when": {"axis":"y","up":"false","north":"true","south":"false","east":"false","west":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 270},"when": {"axis":"y","up":"false","north":"false","south":"true","east":"false","west":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 270},"when": {"axis":"y","up":"false","north":"true","south":"true","east":"false","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 270},"when": {"axis":"y","up":"false","north":"false","south":"false","east":"true","west":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "x": 270},"when": {"axis":"y","up":"false","north":"true","south":"false","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "x": 270},"when": {"axis":"y","up":"false","north":"false","south":"true","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "x": 270},"when": {"axis":"y","up":"false","north":"true","south":"true","east":"true","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 270},"when": {"axis":"y","up":"false","north":"false","south":"false","east":"false","west":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "x": 270},"when": {"axis":"y","up":"false","north":"true","south":"false","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "x": 270},"when": {"axis":"y","up":"false","north":"false","south":"true","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "x": 270},"when": {"axis":"y","up":"false","north":"true","south":"true","east":"false","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "x": 270},"when": {"axis":"y","up":"false","north":"false","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "x": 270},"when": {"axis":"y","up":"false","north":"true","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "x": 270},"when": {"axis":"y","up":"false","north":"false","south":"true","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "x": 270},"when": {"axis":"y","up":"false","north":"true","south":"true","east":"true","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "x": 270},"when": {"axis":"y","up":"false","north":"true","south":"false","east":"false","west":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "x": 270},"when": {"axis":"y","up":"false","north":"false","south":"true","east":"false","west":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "x": 270},"when": {"axis":"y","up":"false","north":"false","south":"false","east":"true","west":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "x": 270},"when": {"axis":"y","up":"false","north":"false","south":"false","east":"false","west":"true","down":"true"}},
+
+
+
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening"},"when": {"axis":"z","north":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening"},"when": {"axis":"z","north":"false","east":"true", "west":"false","up":"false", "down":"false","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_opening"},"when": {"axis":"z","north":"false","east":"false", "west":"true","up":"false", "down":"false","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right"},"when": {"axis":"z","north":"false","east":"true", "west":"true","up":"false", "down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening"},"when": {"axis":"z","north":"false","east":"false", "west":"false","up":"true", "down":"false","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left"},"when": {"axis":"z","north":"false","east":"true", "west":"false","up":"true", "down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right"},"when": {"axis":"z","north":"false","east":"false", "west":"true","up":"true", "down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right"},"when": {"axis":"z","north":"false","east":"true", "west":"true","up":"true", "down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening"},"when": {"axis":"z","north":"false","east":"false", "west":"false","up":"false", "down":"true","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left"},"when": {"axis":"z","north":"false","east":"true", "west":"false","up":"false", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right"},"when": {"axis":"z","north":"false","east":"false", "west":"true","up":"false", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right"},"when": {"axis":"z","north":"false","east":"true", "west":"true","up":"false", "down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right"},"when": {"axis":"z","north":"false","east":"false", "west":"false","up":"true", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left"},"when": {"axis":"z","north":"false","east":"true", "west":"false","up":"true", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right"},"when": {"axis":"z","north":"false","east":"false", "west":"true","up":"true", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right"},"when": {"axis":"z","north":"false","east":"true", "west":"true","up":"true", "down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left"},"when": {"axis":"z","north":"false","east":"true", "west":"false","up":"false", "down":"false","south":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right"},"when": {"axis":"z","north":"false","east":"false", "west":"true","up":"false", "down":"false","south":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up"},"when": {"axis":"z","north":"false","east":"false", "west":"false","up":"true", "down":"false","south":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down"},"when": {"axis":"z","north":"false","east":"false", "west":"false","up":"false", "down":"true","south":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 90},"when": {"axis":"z","east":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 90},"when": {"axis":"z","east":"false","north":"true","south":"false","up":"false","down":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 90},"when": {"axis":"z","east":"false","north":"false","south":"true","up":"false","down":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 90},"when": {"axis":"z","east":"false","north":"true","south":"true","up":"false","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 90},"when": {"axis":"z","east":"false","north":"false","south":"false","up":"true","down":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "y": 90},"when": {"axis":"z","east":"false","north":"true","south":"false","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "y": 90},"when": {"axis":"z","east":"false","north":"false","south":"true","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 90},"when": {"axis":"z","east":"false","north":"true","south":"true","up":"true","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 90},"when": {"axis":"z","east":"false","north":"false","south":"false","up":"false","down":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "y": 90},"when": {"axis":"z","east":"false","north":"true","south":"false","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "y": 90},"when": {"axis":"z","east":"false","north":"false","south":"true","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 90},"when": {"axis":"z","east":"false","north":"true","south":"true","up":"false","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 90},"when": {"axis":"z","east":"false","north":"false","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 90},"when": {"axis":"z","east":"false","north":"true","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 90},"when": {"axis":"z","east":"false","north":"false","south":"true","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "y": 90},"when": {"axis":"z","east":"false","north":"true","south":"true","up":"true","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "y": 90},"when": {"axis":"z","east":"false","north":"true","south":"false","up":"false","down":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "y": 90},"when": {"axis":"z","east":"false","north":"false","south":"true","up":"false","down":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "y": 90},"when": {"axis":"z","east":"false","north":"false","south":"false","up":"true","down":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "y": 90},"when": {"axis":"z","east":"false","north":"false","south":"false","up":"false","down":"true","west":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 180},"when": {"axis":"z","south":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 180},"when": {"axis":"z","south":"false","east":"true","west":"false","up":"false","down":"false","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 180},"when": {"axis":"z","south":"false","east":"false","west":"true","up":"false","down":"false","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 180},"when": {"axis":"z","south":"false","east":"true","west":"true","up":"false","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 180},"when": {"axis":"z","south":"false","east":"false","west":"false","up":"true","down":"false","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "y": 180},"when": {"axis":"z","south":"false","east":"true","west":"false","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "y": 180},"when": {"axis":"z","south":"false","east":"false","west":"true","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 180},"when": {"axis":"z","south":"false","east":"true","west":"true","up":"true","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 180},"when": {"axis":"z","south":"false","east":"false","west":"false","up":"false","down":"true","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "y": 180},"when": {"axis":"z","south":"false","east":"true","west":"false","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "y": 180},"when": {"axis":"z","south":"false","east":"false","west":"true","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 180},"when": {"axis":"z","south":"false","east":"true","west":"true","up":"false","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 180},"when": {"axis":"z","south":"false","east":"false","west":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 180},"when": {"axis":"z","south":"false","east":"true","west":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 180},"when": {"axis":"z","south":"false","east":"false","west":"true","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "y": 180},"when": {"axis":"z","south":"false","east":"true","west":"true","up":"true","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "y": 180},"when": {"axis":"z","south":"false","east":"true","west":"false","up":"false","down":"false","north":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "y": 180},"when": {"axis":"z","south":"false","east":"false","west":"true","up":"false","down":"false","north":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "y": 180},"when": {"axis":"z","south":"false","east":"false","west":"false","up":"true","down":"false","north":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "y": 180},"when": {"axis":"z","south":"false","east":"false","west":"false","up":"false","down":"true","north":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 270},"when": {"axis":"z","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 270},"when": {"axis":"z","west":"false","north":"true","south":"false","up":"false","down":"false","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 270},"when": {"axis":"z","west":"false","north":"false","south":"true","up":"false","down":"false","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 270},"when": {"axis":"z","west":"false","north":"true","south":"true","up":"false","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 270},"when": {"axis":"z","west":"false","north":"false","south":"false","up":"true","down":"false","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "y": 270},"when": {"axis":"z","west":"false","north":"true","south":"false","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "y": 270},"when": {"axis":"z","west":"false","north":"false","south":"true","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 270},"when": {"axis":"z","west":"false","north":"true","south":"true","up":"true","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 270},"when": {"axis":"z","west":"false","north":"false","south":"false","up":"false","down":"true","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "y": 270},"when": {"axis":"z","west":"false","north":"true","south":"false","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "y": 270},"when": {"axis":"z","west":"false","north":"false","south":"true","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 270},"when": {"axis":"z","west":"false","north":"true","south":"true","up":"false","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 270},"when": {"axis":"z","west":"false","north":"false","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 270},"when": {"axis":"z","west":"false","north":"true","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 270},"when": {"axis":"z","west":"false","north":"false","south":"true","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "y": 270},"when": {"axis":"z","west":"false","north":"true","south":"true","up":"true","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "y": 270},"when": {"axis":"z","west":"false","north":"true","south":"false","up":"false","down":"false","east":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "y": 270},"when": {"axis":"z","west":"false","north":"false","south":"true","up":"false","down":"false","east":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "y": 270},"when": {"axis":"z","west":"false","north":"false","south":"false","up":"true","down":"false","east":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "y": 270},"when": {"axis":"z","west":"false","north":"false","south":"false","up":"false","down":"true","east":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 90},"when": {"axis":"z","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 90},"when": {"axis":"z","down":"false","north":"true","south":"false","east":"false","west":"false","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 90},"when": {"axis":"z","down":"false","north":"false","south":"true","east":"false","west":"false","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 90},"when": {"axis":"z","down":"false","north":"true","south":"true","east":"false","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "x": 90},"when": {"axis":"z","down":"false","north":"false","south":"false","east":"true","west":"false","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "x": 90},"when": {"axis":"z","down":"false","north":"true","south":"false","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "x": 90},"when": {"axis":"z","down":"false","north":"false","south":"true","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "x": 90},"when": {"axis":"z","down":"false","north":"true","south":"true","east":"true","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "x": 90},"when": {"axis":"z","down":"false","north":"false","south":"false","east":"false","west":"true","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "x": 90},"when": {"axis":"z","down":"false","north":"true","south":"false","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "x": 90},"when": {"axis":"z","down":"false","north":"false","south":"true","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "x": 90},"when": {"axis":"z","down":"false","north":"true","south":"true","east":"false","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "x": 90},"when": {"axis":"z","down":"false","north":"false","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "x": 90},"when": {"axis":"z","down":"false","north":"true","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "x": 90},"when": {"axis":"z","down":"false","north":"false","south":"true","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "x": 90},"when": {"axis":"z","down":"false","north":"true","south":"true","east":"true","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "x": 90},"when": {"axis":"z","down":"false","north":"true","south":"false","east":"false","west":"false","up":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "x": 90},"when": {"axis":"z","down":"false","north":"false","south":"true","east":"false","west":"false","up":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "x": 90},"when": {"axis":"z","down":"false","north":"false","south":"false","east":"true","west":"false","up":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "x": 90},"when": {"axis":"z","down":"false","north":"false","south":"false","east":"false","west":"true","up":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 270},"when": {"axis":"z","up":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 270},"when": {"axis":"z","up":"false","north":"true","south":"false","east":"false","west":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 270},"when": {"axis":"z","up":"false","north":"false","south":"true","east":"false","west":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 270},"when": {"axis":"z","up":"false","north":"true","south":"true","east":"false","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "x": 270},"when": {"axis":"z","up":"false","north":"false","south":"false","east":"true","west":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "x": 270},"when": {"axis":"z","up":"false","north":"true","south":"false","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "x": 270},"when": {"axis":"z","up":"false","north":"false","south":"true","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "x": 270},"when": {"axis":"z","up":"false","north":"true","south":"true","east":"true","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "x": 270},"when": {"axis":"z","up":"false","north":"false","south":"false","east":"false","west":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "x": 270},"when": {"axis":"z","up":"false","north":"true","south":"false","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "x": 270},"when": {"axis":"z","up":"false","north":"false","south":"true","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "x": 270},"when": {"axis":"z","up":"false","north":"true","south":"true","east":"false","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "x": 270},"when": {"axis":"z","up":"false","north":"false","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "x": 270},"when": {"axis":"z","up":"false","north":"true","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "x": 270},"when": {"axis":"z","up":"false","north":"false","south":"true","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "x": 270},"when": {"axis":"z","up":"false","north":"true","south":"true","east":"true","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "x": 270},"when": {"axis":"z","up":"false","north":"true","south":"false","east":"false","west":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "x": 270},"when": {"axis":"z","up":"false","north":"false","south":"true","east":"false","west":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "x": 270},"when": {"axis":"z","up":"false","north":"false","south":"false","east":"true","west":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "x": 270},"when": {"axis":"z","up":"false","north":"false","south":"false","east":"false","west":"true","down":"true"}},
+
+
+
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening"},"when": {"axis":"x","north":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right"},"when": {"axis":"x","north":"false","east":"true", "west":"false","up":"false", "down":"false","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right"},"when": {"axis":"x","north":"false","east":"false", "west":"true","up":"false", "down":"false","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right"},"when": {"axis":"x","north":"false","east":"true", "west":"true","up":"false", "down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right"},"when": {"axis":"x","north":"false","east":"false", "west":"false","up":"true", "down":"false","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left"},"when": {"axis":"x","north":"false","east":"true", "west":"false","up":"true", "down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right"},"when": {"axis":"x","north":"false","east":"false", "west":"true","up":"true", "down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right"},"when": {"axis":"x","north":"false","east":"true", "west":"true","up":"true", "down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right"},"when": {"axis":"x","north":"false","east":"false", "west":"false","up":"false", "down":"true","south":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left"},"when": {"axis":"x","north":"false","east":"true", "west":"false","up":"false", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right"},"when": {"axis":"x","north":"false","east":"false", "west":"true","up":"false", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right"},"when": {"axis":"x","north":"false","east":"true", "west":"true","up":"false", "down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down"},"when": {"axis":"x","north":"false","east":"false", "west":"false","up":"true", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left"},"when": {"axis":"x","north":"false","east":"true", "west":"false","up":"true", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right"},"when": {"axis":"x","north":"false","east":"false", "west":"true","up":"true", "down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right"},"when": {"axis":"x","north":"false","east":"true", "west":"true","up":"true", "down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left"},"when": {"axis":"x","north":"false","east":"true", "west":"false","up":"false", "down":"false","south":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right"},"when": {"axis":"x","north":"false","east":"false", "west":"true","up":"false", "down":"false","south":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up"},"when": {"axis":"x","north":"false","east":"false", "west":"false","up":"true", "down":"false","south":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down"},"when": {"axis":"x","north":"false","east":"false", "west":"false","up":"false", "down":"true","south":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 90},"when": {"axis":"x","east":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 90},"when": {"axis":"x","east":"false","north":"true","south":"false","up":"false","down":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 90},"when": {"axis":"x","east":"false","north":"false","south":"true","up":"false","down":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 90},"when": {"axis":"x","east":"false","north":"true","south":"true","up":"false","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 90},"when": {"axis":"x","east":"false","north":"false","south":"false","up":"true","down":"false","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "y": 90},"when": {"axis":"x","east":"false","north":"true","south":"false","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "y": 90},"when": {"axis":"x","east":"false","north":"false","south":"true","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 90},"when": {"axis":"x","east":"false","north":"true","south":"true","up":"true","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 90},"when": {"axis":"x","east":"false","north":"false","south":"false","up":"false","down":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "y": 90},"when": {"axis":"x","east":"false","north":"true","south":"false","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "y": 90},"when": {"axis":"x","east":"false","north":"false","south":"true","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 90},"when": {"axis":"x","east":"false","north":"true","south":"true","up":"false","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 90},"when": {"axis":"x","east":"false","north":"false","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 90},"when": {"axis":"x","east":"false","north":"true","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 90},"when": {"axis":"x","east":"false","north":"false","south":"true","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "y": 90},"when": {"axis":"x","east":"false","north":"true","south":"true","up":"true","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "y": 90},"when": {"axis":"x","east":"false","north":"true","south":"false","up":"false","down":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "y": 90},"when": {"axis":"x","east":"false","north":"false","south":"true","up":"false","down":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "y": 90},"when": {"axis":"x","east":"false","north":"false","south":"false","up":"true","down":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "y": 90},"when": {"axis":"x","east":"false","north":"false","south":"false","up":"false","down":"true","west":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 180},"when": {"axis":"x","south":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 180},"when": {"axis":"x","south":"false","east":"true","west":"false","up":"false","down":"false","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 180},"when": {"axis":"x","south":"false","east":"false","west":"true","up":"false","down":"false","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 180},"when": {"axis":"x","south":"false","east":"true","west":"true","up":"false","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 180},"when": {"axis":"x","south":"false","east":"false","west":"false","up":"true","down":"false","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "y": 180},"when": {"axis":"x","south":"false","east":"true","west":"false","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "y": 180},"when": {"axis":"x","south":"false","east":"false","west":"true","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 180},"when": {"axis":"x","south":"false","east":"true","west":"true","up":"true","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 180},"when": {"axis":"x","south":"false","east":"false","west":"false","up":"false","down":"true","north":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "y": 180},"when": {"axis":"x","south":"false","east":"true","west":"false","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "y": 180},"when": {"axis":"x","south":"false","east":"false","west":"true","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 180},"when": {"axis":"x","south":"false","east":"true","west":"true","up":"false","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 180},"when": {"axis":"x","south":"false","east":"false","west":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 180},"when": {"axis":"x","south":"false","east":"true","west":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 180},"when": {"axis":"x","south":"false","east":"false","west":"true","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "y": 180},"when": {"axis":"x","south":"false","east":"true","west":"true","up":"true","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "y": 180},"when": {"axis":"x","south":"false","east":"true","west":"false","up":"false","down":"false","north":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "y": 180},"when": {"axis":"x","south":"false","east":"false","west":"true","up":"false","down":"false","north":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "y": 180},"when": {"axis":"x","south":"false","east":"false","west":"false","up":"true","down":"false","north":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "y": 180},"when": {"axis":"x","south":"false","east":"false","west":"false","up":"false","down":"true","north":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 270},"when": {"axis":"x","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 270},"when": {"axis":"x","west":"false","north":"true","south":"false","up":"false","down":"false","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 270},"when": {"axis":"x","west":"false","north":"false","south":"true","up":"false","down":"false","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "y": 270},"when": {"axis":"x","west":"false","north":"true","south":"true","up":"false","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 270},"when": {"axis":"x","west":"false","north":"false","south":"false","up":"true","down":"false","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "y": 270},"when": {"axis":"x","west":"false","north":"true","south":"false","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "y": 270},"when": {"axis":"x","west":"false","north":"false","south":"true","up":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "y": 270},"when": {"axis":"x","west":"false","north":"true","south":"true","up":"true","down":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "y": 270},"when": {"axis":"x","west":"false","north":"false","south":"false","up":"false","down":"true","east":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "y": 270},"when": {"axis":"x","west":"false","north":"true","south":"false","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "y": 270},"when": {"axis":"x","west":"false","north":"false","south":"true","up":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "y": 270},"when": {"axis":"x","west":"false","north":"true","south":"true","up":"false","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "y": 270},"when": {"axis":"x","west":"false","north":"false","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "y": 270},"when": {"axis":"x","west":"false","north":"true","south":"false","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "y": 270},"when": {"axis":"x","west":"false","north":"false","south":"true","up":"true","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "y": 270},"when": {"axis":"x","west":"false","north":"true","south":"true","up":"true","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "y": 270},"when": {"axis":"x","west":"false","north":"true","south":"false","up":"false","down":"false","east":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "y": 270},"when": {"axis":"x","west":"false","north":"false","south":"true","up":"false","down":"false","east":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "y": 270},"when": {"axis":"x","west":"false","north":"false","south":"false","up":"true","down":"false","east":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "y": 270},"when": {"axis":"x","west":"false","north":"false","south":"false","up":"false","down":"true","east":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 90},"when": {"axis":"x","down":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "x": 90},"when": {"axis":"x","down":"false","north":"true","south":"false","east":"false","west":"false","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "x": 90},"when": {"axis":"x","down":"false","north":"false","south":"true","east":"false","west":"false","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 90},"when": {"axis":"x","down":"false","north":"true","south":"true","east":"false","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "x": 90},"when": {"axis":"x","down":"false","north":"false","south":"false","east":"true","west":"false","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "x": 90},"when": {"axis":"x","down":"false","north":"true","south":"false","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "x": 90},"when": {"axis":"x","down":"false","north":"false","south":"true","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "x": 90},"when": {"axis":"x","down":"false","north":"true","south":"true","east":"true","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "x": 90},"when": {"axis":"x","down":"false","north":"false","south":"false","east":"false","west":"true","up":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "x": 90},"when": {"axis":"x","down":"false","north":"true","south":"false","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "x": 90},"when": {"axis":"x","down":"false","north":"false","south":"true","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "x": 90},"when": {"axis":"x","down":"false","north":"true","south":"true","east":"false","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "x": 90},"when": {"axis":"x","down":"false","north":"false","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "x": 90},"when": {"axis":"x","down":"false","north":"true","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "x": 90},"when": {"axis":"x","down":"false","north":"false","south":"true","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "x": 90},"when": {"axis":"x","down":"false","north":"true","south":"true","east":"true","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "x": 90},"when": {"axis":"x","down":"false","north":"true","south":"false","east":"false","west":"false","up":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "x": 90},"when": {"axis":"x","down":"false","north":"false","south":"true","east":"false","west":"false","up":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "x": 90},"when": {"axis":"x","down":"false","north":"false","south":"false","east":"true","west":"false","up":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "x": 90},"when": {"axis":"x","down":"false","north":"false","south":"false","east":"false","west":"true","up":"true"}},
+
+
+    {"apply": {"model": "melting_point:block/lead_pipe_opening", "x": 270},"when": {"axis":"x","up":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "x": 270},"when": {"axis":"x","up":"false","north":"true","south":"false","east":"false","west":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "x": 270},"when": {"axis":"x","up":"false","north":"false","south":"true","east":"false","west":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down", "x": 270},"when": {"axis":"x","up":"false","north":"true","south":"true","east":"false","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "x": 270},"when": {"axis":"x","up":"false","north":"false","south":"false","east":"true","west":"false","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left", "x": 270},"when": {"axis":"x","up":"false","north":"true","south":"false","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left", "x": 270},"when": {"axis":"x","up":"false","north":"false","south":"true","east":"true","west":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left", "x": 270},"when": {"axis":"x","up":"false","north":"true","south":"true","east":"true","west":"false"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "x": 270},"when": {"axis":"x","up":"false","north":"false","south":"false","east":"false","west":"true","down":"false"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_right", "x": 270},"when": {"axis":"x","up":"false","north":"true","south":"false","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_right", "x": 270},"when": {"axis":"x","up":"false","north":"false","south":"true","east":"false","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_right", "x": 270},"when": {"axis":"x","up":"false","north":"true","south":"true","east":"false","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left_right", "x": 270},"when": {"axis":"x","up":"false","north":"false","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down_left_right", "x": 270},"when": {"axis":"x","up":"false","north":"true","south":"false","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_left_right", "x": 270},"when": {"axis":"x","up":"false","north":"false","south":"true","east":"true","west":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up_down_left_right", "x": 270},"when": {"axis":"x","up":"false","north":"true","south":"true","east":"true","west":"true"}},
+
+    {"apply": {"model": "melting_point:block/lead_pipe_side_down", "x": 270},"when": {"axis":"x","up":"false","north":"true","south":"false","east":"false","west":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_up", "x": 270},"when": {"axis":"x","up":"false","north":"false","south":"true","east":"false","west":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_left", "x": 270},"when": {"axis":"x","up":"false","north":"false","south":"false","east":"true","west":"false","down":"true"}},
+    {"apply": {"model": "melting_point:block/lead_pipe_side_right", "x": 270},"when": {"axis":"x","up":"false","north":"false","south":"false","east":"false","west":"true","down":"true"}}
+  ]
+}

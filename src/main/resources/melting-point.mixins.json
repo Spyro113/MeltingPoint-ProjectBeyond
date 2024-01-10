@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "net.projectbeyond.melting_point.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"MeltingPointMixin",
+		"MeltingPointClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

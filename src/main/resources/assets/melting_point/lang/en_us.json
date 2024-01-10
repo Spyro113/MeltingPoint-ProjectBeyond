@@ -1,0 +1,21 @@
+{
+
+  "item.melting_point.raw_lead": "Raw Lead",
+  "item.melting_point.lead_nugget": "Lead Nugget",
+  "item.melting_point.lead_ingot": "Lead Ingot",
+  "block.melting_point.lead_ore": "Lead Ore",
+  "block.melting_point.deepslate_lead_ore": "Deepslate Lead Ore",
+  "block.melting_point.raw_lead_block": "Raw Lead Block",
+  "block.melting_point.lead_block": "Lead Block",
+
+  "item.melting_point.raw_tungsten": "Raw Tungsten",
+  "item.melting_point.tungsten_nugget": "Tungsten Nugget",
+  "item.melting_point.tungsten_ingot": "Tungsten Ingot",
+  "block.melting_point.tungsten_ore": "Tungsten Ore",
+  "block.melting_point.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
+  "block.melting_point.raw_tungsten_block": "Raw Tungsten Block",
+  "block.melting_point.tungsten_block": "Tungsten Block",
+
+  "block.melting_point.melting_pot": "Melting Pot",
+  "block.melting_point.lead_pipe": "Lead Pipe"
+}

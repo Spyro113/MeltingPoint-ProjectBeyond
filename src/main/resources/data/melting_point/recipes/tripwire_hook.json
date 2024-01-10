@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "I": {
+      "tag": "melting_point:iron_lead_interchangeable_ingots"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "I",
+    "S",
+    "#"
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:tripwire_hook"
+  }
+}

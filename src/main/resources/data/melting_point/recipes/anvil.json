@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+        "tag": "melting_point:iron_lead_interchangeable_blocks"
+    },
+    "i": {
+      "tag": "melting_point:iron_lead_interchangeable_ingots"
+    }
+  },
+  "pattern": [
+    "III",
+    " i ",
+    "iii"
+  ],
+  "result": {
+    "item": "minecraft:anvil"
+  }
+}

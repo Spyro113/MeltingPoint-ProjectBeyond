@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "tag": "melting_point:iron_lead_interchangeable_ingots"
+    },
+    "N": {
+      "tag": "melting_point:iron_lead_interchangeable_nuggets"
+    }
+  },
+  "pattern": [
+    "N",
+    "I",
+    "N"
+  ],
+  "result": {
+    "item": "minecraft:chain"
+  }
+}

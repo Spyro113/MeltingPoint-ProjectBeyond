@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tungsten_ingot",
+  "key": {
+    "#": {
+      "item": "melting_point:tungsten_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "melting_point:tungsten_ingot"
+  }
+}

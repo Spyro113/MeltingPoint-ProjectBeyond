@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    {"required": false,"id":"melting_point:lead_ingot"},
+    {"required": false,"id":"minecraft:iron_ingot"}
+  ]
+}

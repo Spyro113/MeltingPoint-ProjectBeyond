@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "melting_point",
+	"version": "${version}",
+	"name": "Melting Point",
+	"description": "A Mod all about Metal!",
+	"authors": [
+		"Spyro113 - Lead Developer, Concept Artist, Lead Artist"
+	],
+	"contact": {
+		"sources": "None Yet"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/melting_point/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.projectbeyond.melting_point.MeltingPoint"
+		],
+		"client": [
+			"net.projectbeyond.melting_point.MeltingPointClient"
+		],
+		"fabric-datagen": [
+          "net.projectbeyond.melting_point.MeltingPointDataGenerator"
+		]
+	},
+	"mixins": [
+		"melting-point.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

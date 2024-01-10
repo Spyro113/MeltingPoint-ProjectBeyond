@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:torch"
+    },
+    "X": {
+      "tag": "melting_point:iron_lead_interchangeable_nuggets"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "result": {
+    "item": "minecraft:lantern"
+  }
+}

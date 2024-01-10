@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:soul_torch"
+    },
+    "X": {
+      "tag": "melting_point:iron_lead_interchangeable_ingots"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "result": {
+    "item": "minecraft:soul_lantern"
+  }
+}
