@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "tin_plate",
+  "ingredient": {
+    "item": "melting_point:raw_tin"
+  },
+  "result": "melting_point:tin_plate"
+}

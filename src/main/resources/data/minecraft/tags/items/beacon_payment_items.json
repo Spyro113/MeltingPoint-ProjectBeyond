@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "melting_point:bronze_ingot",
     "melting_point:tungsten_ingot"
   ]
 }

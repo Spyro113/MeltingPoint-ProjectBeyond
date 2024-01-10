@@ -1,5 +1,17 @@
 {
 
+  "item.melting_point.raw_tin": "Raw Tin",
+  "item.melting_point.tin_plate": "Tin Plate",
+  "block.melting_point.tin_ore": "Tin Ore",
+  "block.melting_point.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.melting_point.tin_block": "Tin Block",
+
+  "item.melting_point.bronze_ingot": "Bronze Ingot",
+  "item.melting_point.bronze_nugget": "Bronze Nugget",
+  "block.melting_point.bronze_block": "Bronze Block",
+  "block.melting_point.aged_bronze_block": "Aged Bronze Block",
+  "block.melting_point.ancient_bronze_block": "Ancient Bronze Block",
+
   "item.melting_point.raw_lead": "Raw Lead",
   "item.melting_point.lead_nugget": "Lead Nugget",
   "item.melting_point.lead_ingot": "Lead Ingot",
@@ -13,6 +25,7 @@
   "item.melting_point.tungsten_ingot": "Tungsten Ingot",
   "block.melting_point.tungsten_ore": "Tungsten Ore",
   "block.melting_point.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
+  "block.melting_point.nether_tungsten_ore": "Nether Tungsten Ore",
   "block.melting_point.raw_tungsten_block": "Raw Tungsten Block",
   "block.melting_point.tungsten_block": "Tungsten Block",
 

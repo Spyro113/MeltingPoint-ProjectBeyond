@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bronze_ingot",
+  "ingredients": [
+    {
+      "item": "melting_point:bronze_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "melting_point:bronze_ingot"
+  }
+}

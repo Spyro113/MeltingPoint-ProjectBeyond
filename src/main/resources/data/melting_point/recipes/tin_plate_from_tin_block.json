@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "tin_plate",
+  "ingredients": [
+    {
+      "item": "melting_point:tin_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "melting_point:tin_plate"
+  }
+}

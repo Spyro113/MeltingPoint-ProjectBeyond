@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bronze_ingot",
+  "key": {
+    "#": {
+      "item": "melting_point:bronze_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "melting_point:bronze_ingot"
+  }
+}

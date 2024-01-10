@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    {"required": false,"id":"melting_point:tin_ore"},
+    {"required": false,"id":"melting_point:deepslate_tin_ore"},
+    {"required": false,"id":"melting_point:raw_tin_block"},
+    {"required": false,"id":"melting_point:tin_block"},
+
     {"required": false,"id":"melting_point:lead_ore"},
     {"required": false,"id":"melting_point:deepslate_lead_ore"},
     {"required": false,"id":"melting_point:raw_lead_block"},

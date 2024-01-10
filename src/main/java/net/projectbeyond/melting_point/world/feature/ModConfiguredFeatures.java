@@ -19,6 +19,8 @@ import net.projectbeyond.melting_point.block.ModBlocks;
 import java.util.List;
 
 public class ModConfiguredFeatures {
+    public static final RegistryKey<ConfiguredFeature<?, ?>> TIN_ORE_KEY = registerKey("tin_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> LARGE_TIN_ORE_KEY = registerKey("large_tin_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> LEAD_ORE_KEY = registerKey("lead_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TUNGSTEN_ORE_KEY = registerKey("tungsten_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_TUNGSTEN_ORE_KEY = registerKey("nether_tungsten_ore");
@@ -28,6 +30,15 @@ public class ModConfiguredFeatures {
         RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest netherReplacables = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
         RuleTest endReplacables = new BlockMatchRuleTest(Blocks.END_STONE);
+
+        List<OreFeatureConfig.Target> overworldTinOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.TIN_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_TIN_ORE.getDefaultState()));
+        register(context, TIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTinOres, 10, 0.1f));
+        List<OreFeatureConfig.Target> overworldLargeTinOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.TIN_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_TIN_ORE.getDefaultState()));
+        register(context, LARGE_TIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldLargeTinOres, 24, 0.5f));
 
         List<OreFeatureConfig.Target> overworldLeadOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.LEAD_ORE.getDefaultState()),
@@ -39,9 +50,9 @@ public class ModConfiguredFeatures {
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_TUNGSTEN_ORE.getDefaultState()));
         register(context, TUNGSTEN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTungstenOres, 9));
 
-        /*List<OreFeatureConfig.Target> netherTungstenOres =
+        List<OreFeatureConfig.Target> netherTungstenOres =
                 List.of(OreFeatureConfig.createTarget(netherReplacables, ModBlocks.NETHER_TUNGSTEN_ORE.getDefaultState()));
-        register(context, NETHER_TUNGSTEN_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherTungstenOres, 10));*/
+        register(context, NETHER_TUNGSTEN_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherTungstenOres, 10));
 
     }
 
