@@ -34,11 +34,11 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldTinOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.TIN_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_TIN_ORE.getDefaultState()));
-        register(context, TIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTinOres, 10, 0.1f));
+        register(context, TIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTinOres, 10, 0.25f));
         List<OreFeatureConfig.Target> overworldLargeTinOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.TIN_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_TIN_ORE.getDefaultState()));
-        register(context, LARGE_TIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldLargeTinOres, 24, 0.5f));
+        register(context, LARGE_TIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldLargeTinOres, 20, 0.75f));
 
         List<OreFeatureConfig.Target> overworldLeadOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.LEAD_ORE.getDefaultState()),

@@ -12,6 +12,12 @@
   "block.melting_point.aged_bronze_block": "Aged Bronze Block",
   "block.melting_point.ancient_bronze_block": "Ancient Bronze Block",
 
+  "item.melting_point.bronze_sword": "Bronze Sword",
+  "item.melting_point.bronze_shovel": "Bronze Shovel",
+  "item.melting_point.bronze_pickaxe": "Bronze Pickaxe",
+  "item.melting_point.bronze_axe": "Bronze Axe",
+  "item.melting_point.bronze_hoe": "Bronze Hoe",
+
   "item.melting_point.raw_lead": "Raw Lead",
   "item.melting_point.lead_nugget": "Lead Nugget",
   "item.melting_point.lead_ingot": "Lead Ingot",
@@ -29,6 +35,7 @@
   "block.melting_point.raw_tungsten_block": "Raw Tungsten Block",
   "block.melting_point.tungsten_block": "Tungsten Block",
 
+  "item.melting_point.crude_iron": "Crude Iron",
   "block.melting_point.melting_pot": "Melting Pot",
   "block.melting_point.lead_pipe": "Lead Pipe"
 }
