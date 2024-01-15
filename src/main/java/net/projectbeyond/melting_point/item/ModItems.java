@@ -47,6 +47,10 @@ public class ModItems {
     public static final Item BRONZE_HOE = registerItem( "bronze_hoe",
             new HoeItem(ModToolMaterial.BRONZE, 2, 0.0f, new FabricItemSettings()));
 
+    public static final Item EMPTY_TIN_CAN = registerItem( "empty_tin_can",
+            new Item(new FabricItemSettings()));
+    public static final Item CANNED_FOOD = registerItem( "canned_food",
+            new Item(new FabricItemSettings()));
     public static final Item CRUDE_IRON = registerItem( "crude_iron",
             new Item(new FabricItemSettings()));
 
@@ -60,6 +64,11 @@ public class ModItems {
         entries.add(ModBlocks.LEAD_BLOCK);
         entries.add(ModBlocks.RAW_TUNGSTEN_BLOCK);
         entries.add(ModBlocks.TUNGSTEN_BLOCK);
+        entries.add(ModBlocks.PLATED_BLOCK);
+        entries.add(ModBlocks.PLATED_RAILING);
+        entries.add(ModBlocks.PLATED_GRATE);
+        entries.add(ModBlocks.PLATED_GRATE_STAIRS);
+        entries.add(ModBlocks.PLATED_GRATE_SLAB);
     }
     private static void addItemsToIngredientTab(FabricItemGroupEntries entries){
         entries.add(RAW_TIN);
@@ -72,6 +81,7 @@ public class ModItems {
         entries.add(RAW_TUNGSTEN);
         entries.add(TUNGSTEN_INGOT);
         entries.add(TUNGSTEN_NUGGET);
+        entries.add(EMPTY_TIN_CAN);
         entries.add(CRUDE_IRON);
     }
     private static void addItemsToNaturalTab(FabricItemGroupEntries entries){

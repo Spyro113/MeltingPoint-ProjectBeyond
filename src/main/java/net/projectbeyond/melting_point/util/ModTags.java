@@ -18,6 +18,7 @@ public class ModTags {
     }
 
     public static class Items{
+        public static final TagKey<Item> CANABLE = createTag("canable");
         public static final TagKey<Item> IRON_LEAD_INTERCHANGEABLE_NUGGETS = createTag("iron_lead_interchangeable_nuggets");
         public static final TagKey<Item> IRON_LEAD_INTERCHANGEABLE_INGOTS = createTag("iron_lead_interchangeable_ingots");
         public static final TagKey<Item> IRON_LEAD_INTERCHANGEABLE_BLOCKS = createTag("iron_lead_interchangeable_blocks");

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "melting_point:block/plated_grate_slab"
+    },
+    "type=double": {
+      "model": "melting_point:block/plated_grate"
+    },
+    "type=top": {
+      "model": "melting_point:block/plated_grate_slab_top"
+    }
+  }
+}

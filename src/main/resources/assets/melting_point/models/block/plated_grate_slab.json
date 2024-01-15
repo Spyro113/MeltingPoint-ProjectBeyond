@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "melting_point:block/plated_grate",
+    "side": "melting_point:block/plated_grate",
+    "top": "melting_point:block/plated_grate"
+  }
+}

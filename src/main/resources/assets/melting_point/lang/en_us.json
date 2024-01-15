@@ -35,6 +35,12 @@
   "block.melting_point.raw_tungsten_block": "Raw Tungsten Block",
   "block.melting_point.tungsten_block": "Tungsten Block",
 
+  "block.melting_point.plated_block": "Plated Block",
+  "block.melting_point.plated_railing": "Plated Railing",
+  "block.melting_point.plated_grate": "Plated Grate",
+  "block.melting_point.plated_grate_stairs": "Plated Grate Stairs",
+  "block.melting_point.plated_grate_slab": "Plated Grate Slab",
+
   "item.melting_point.crude_iron": "Crude Iron",
   "block.melting_point.melting_pot": "Melting Pot",
   "block.melting_point.lead_pipe": "Lead Pipe"
