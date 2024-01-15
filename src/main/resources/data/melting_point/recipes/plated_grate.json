@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "p":{
+      "item": "melting_point:plated_block"
+    }
+  },
+  "pattern": [
+    " p ",
+    "p p",
+    " p "
+  ],
+  "result": {
+    "item": "melting_point:plated_grate",
+    "count": 8
+  }
+}

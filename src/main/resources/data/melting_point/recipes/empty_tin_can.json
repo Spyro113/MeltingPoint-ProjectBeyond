@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "p":{
+      "item": "melting_point:tin_plate"
+    }
+  },
+  "pattern": [
+    "p p",
+    "ppp"
+  ],
+  "result": {
+    "item": "melting_point:empty_tin_can",
+    "count": 8
+  }
+}

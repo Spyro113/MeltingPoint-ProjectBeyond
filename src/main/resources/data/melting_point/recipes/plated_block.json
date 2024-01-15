@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "i":{
+      "tag": "melting_point:iron_lead_interchangeable_ingots"
+    },
+    "t":{
+      "item": "melting_point:tin_plate"
+    }
+  },
+  "pattern": [
+    "it",
+    "ti"
+  ],
+  "result": {
+    "item": "melting_point:plated_block"
+  }
+}
