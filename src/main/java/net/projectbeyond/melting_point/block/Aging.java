@@ -11,7 +11,13 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.Degradable;
 
 public interface Aging extends Degradable<Aging.AgingLevel> {
-    public static final Supplier<BiMap<Block, Block>> AGING_LEVEL_INCREASES = Suppliers.memoize(() -> ((ImmutableBiMap.Builder) ((ImmutableBiMap.Builder)ImmutableBiMap.builder().put(ModBlocks.BRONZE_BLOCK, ModBlocks.AGED_BRONZE_BLOCK)).put(ModBlocks.AGED_BRONZE_BLOCK, ModBlocks.ANCIENT_BRONZE_BLOCK)).build());
+    public static final Supplier<BiMap<Block, Block>> AGING_LEVEL_INCREASES =
+            Suppliers.memoize(() ->
+                    ((ImmutableBiMap.Builder)
+                    ((ImmutableBiMap.Builder)ImmutableBiMap.builder().put
+                    (ModBlocks.BRONZE_BLOCK, ModBlocks.AGED_BRONZE_BLOCK)).put
+                    (ModBlocks.AGED_BRONZE_BLOCK, ModBlocks.ANCIENT_BRONZE_BLOCK)).build());
+
     public static final Supplier<BiMap<Block, Block>> AGING_LEVEL_DECREASES = Suppliers.memoize(() -> AGING_LEVEL_INCREASES.get().inverse());
 
     public static Optional<Block> getDecreasedAgingBlock(Block block) {

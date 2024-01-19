@@ -48,9 +48,9 @@ public class ModItems {
             new HoeItem(ModToolMaterial.BRONZE, 2, 0.0f, new FabricItemSettings()));
 
     public static final Item EMPTY_TIN_CAN = registerItem( "empty_tin_can",
-            new Item(new FabricItemSettings()));
+            new EmptyTinCanItem(new FabricItemSettings()));
     public static final Item CANNED_FOOD = registerItem( "canned_food",
-            new Item(new FabricItemSettings()));
+            new CannedFoodItem(new FabricItemSettings()));
     public static final Item CRUDE_IRON = registerItem( "crude_iron",
             new Item(new FabricItemSettings()));
 

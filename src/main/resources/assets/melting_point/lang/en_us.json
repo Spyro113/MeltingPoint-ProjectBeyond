@@ -41,6 +41,8 @@
   "block.melting_point.plated_grate_stairs": "Plated Grate Stairs",
   "block.melting_point.plated_grate_slab": "Plated Grate Slab",
 
+  "item.melting_point.empty_tin_can": "Empty Tin Can",
+  "item.melting_point.canned_food": "Canned of Food",
   "item.melting_point.crude_iron": "Crude Iron",
   "block.melting_point.melting_pot": "Melting Pot",
   "block.melting_point.lead_pipe": "Lead Pipe"

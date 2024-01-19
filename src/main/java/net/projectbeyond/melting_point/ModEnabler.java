@@ -2,6 +2,7 @@ package net.projectbeyond.melting_point;
 
 import net.projectbeyond.melting_point.block.ModBlocks;
 import net.projectbeyond.melting_point.item.ModItems;
+import net.projectbeyond.melting_point.util.ModVillagerTrades;
 import net.projectbeyond.melting_point.world.gen.ModWorldGeneration;
 
 public class ModEnabler {
@@ -18,6 +19,8 @@ public class ModEnabler {
 
             ModItems.registerModItems();
             ModBlocks.registerModBlocks();
+
+            ModVillagerTrades.registerModVillagerTrades();
 
             ModWorldGeneration.generateModWorldGen();
 
