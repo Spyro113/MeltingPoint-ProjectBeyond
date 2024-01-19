@@ -38,12 +38,12 @@ public class EmptyTinCanItem extends Item {
             return;
         if ((entity instanceof LivingEntity livEntity ? livEntity.getOffHandStack() : ItemStack.EMPTY).isIn(ModTags.Items.CANNABLE) ) {
             if (entity instanceof PlayerEntity player) {
-                ItemStack cannedfood = setCannedFoodData(entity);
-                LivingEntity livingentity = (LivingEntity) entity;
-                ItemStack food = livingentity.getOffHandStack();
+                ItemStack cannedFood = setCannedFoodData(entity);
+                LivingEntity livingEntity = (LivingEntity) entity;
+                ItemStack food = livingEntity.getOffHandStack();
                 ItemStack bowl = new ItemStack(Items.BOWL);
-                cannedfood.setCount(1);
-                player.getInventory().insertStack(cannedfood);
+                cannedFood.setCount(1);
+                player.getInventory().insertStack(cannedFood);
                 player.getInventory().remove(p -> food.getItem() == p.getItem(), 1, player.getInventory());
                 bowl.setCount(1);
                 player.getInventory().insertStack(bowl);
@@ -53,19 +53,21 @@ public class EmptyTinCanItem extends Item {
     public static ItemStack setCannedFoodData(Entity entity) {
         if (entity == null)
             return ItemStack.EMPTY;
-        ItemStack cannedfoodinstance = new ItemStack(ModItems.CANNED_FOOD);
-        LivingEntity livingentity = (LivingEntity) entity;
-        ItemStack offhandstack = livingentity.getOffHandStack();
-        Identifier offhandidentifier = Registries.ITEM.getId(offhandstack.getItem());
+        ItemStack cannedFoodInstance = new ItemStack(ModItems.CANNED_FOOD);
+        LivingEntity livingEntity = (LivingEntity) entity;
+        ItemStack offHandStack = livingEntity.getOffHandStack();
+        Identifier offHandIdentifier = Registries.ITEM.getId(offHandStack.getItem());
+        NbtCompound nbtTag = (entity instanceof LivingEntity ? offHandStack : ItemStack.EMPTY).getNbt();
 
-        NbtCompound nbtTag = (entity instanceof LivingEntity ? offhandstack : ItemStack.EMPTY).getNbt();
         if (nbtTag != null) {
-            cannedfoodinstance.setNbt(nbtTag.copy());
+            cannedFoodInstance.setNbt(nbtTag.copy());
         }
+        if (offHandStack.hasCustomName()){
+            cannedFoodInstance.getOrCreateNbt().put("FoodCustomName", NbtString.of( (offHandStack.getName().getString()) ));
+        }
+        cannedFoodInstance.setCustomName(Text.literal(("Canned " + (offHandStack.getName().getString()) )));
+        cannedFoodInstance.getOrCreateNbt().put("FoodID", NbtString.of( (offHandIdentifier.toString()) ));
 
-        cannedfoodinstance.setCustomName(Text.literal(("Canned " + (offhandstack.getName().getString()))));
-        cannedfoodinstance.getOrCreateNbt().put("FoodID", NbtString.of( (offhandidentifier.toString()) ));
-
-        return cannedfoodinstance;
+        return cannedFoodInstance;
     }
 }
