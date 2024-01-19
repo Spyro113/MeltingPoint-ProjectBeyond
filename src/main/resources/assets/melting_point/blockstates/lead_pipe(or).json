@@ -1,7 +1,0 @@
-{
-  "variants": {
-    "axis=y": {"model": "melting_point:block/lead_pipe"},
-    "axis=z": {"model": "melting_point:block/lead_pipe","x":90},
-    "axis=x": {"model": "melting_point:block/lead_pipe","x":90,"y": 90}
-  }
-}

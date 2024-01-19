@@ -17,33 +17,29 @@ public class CannedFoodItem extends Item {
     }
 
     @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity entity, Hand hand) {
-        TypedActionResult<ItemStack> ar = super.use(world, entity, hand);
-        ItemStack itemstack = ar.getValue();
-        double x = entity.getX();
-        double y = entity.getY();
-        double z = entity.getZ();
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+        TypedActionResult<ItemStack> ar = super.use(world, player, hand);
+        ItemStack stack = ar.getValue();
 
-        openCannedFood(entity, itemstack);
-        return ar;
-    }
-    public static void openCannedFood (Entity entity, ItemStack itemstack) {
-        if (entity == null)
-            return;
-        if (entity instanceof PlayerEntity _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.BOWL)) : false) {
-            itemstack.setCount((int) (itemstack.getCount() - 1));
-            if (entity instanceof PlayerEntity _player) {
-                ItemStack _stktoremove = new ItemStack(Items.BOWL);
-                _player.getInventory().remove(p -> _stktoremove.getItem() == p.getItem(), 1, _player.getInventory());
-            }
-            if (entity instanceof PlayerEntity _player) {
-                ItemStack _setstack = new ItemStack(Registries.ITEM.get(new Identifier(((itemstack.getOrCreateNbt().getString("FoodID"))).toLowerCase(java.util.Locale.ENGLISH))));
-                _setstack.setCount(1);
-                _player.getInventory().insertStack(_setstack);
+        if (canOpenCannedFood(player) && !world.isClient){
+            openCannedFood(player, stack);
+            if (!player.getAbilities().creativeMode){
+                stack.decrement(1);
             }
         }
+        return ar;
     }
-
-
+    private static boolean canOpenCannedFood (Entity entity) {
+        return entity instanceof PlayerEntity hasItem && hasItem.getInventory().contains(new ItemStack(Items.BOWL));
+    }
+    public static void openCannedFood (Entity entity, ItemStack stack) {
+        if (entity instanceof PlayerEntity player) {
+            ItemStack bowl = new ItemStack(Items.BOWL);
+            ItemStack food = new ItemStack(Registries.ITEM.get(new Identifier((stack.getOrCreateNbt().getString("FoodID")).toLowerCase(java.util.Locale.ENGLISH))));
+            player.getInventory().remove(p -> bowl.getItem() == p.getItem(), 1, player.getInventory());
+            food.setCount(1);
+            player.getInventory().insertStack(food);
+        }
+    }
 
 }
