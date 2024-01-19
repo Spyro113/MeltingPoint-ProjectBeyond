@@ -54,11 +54,18 @@ public class EmptyTinCanItem extends Item {
         if (entity == null)
             return ItemStack.EMPTY;
         ItemStack cannedfoodinstance = new ItemStack(ModItems.CANNED_FOOD);
-        ItemStack offhandstack = entity instanceof LivingEntity livEntity ? livEntity.getOffHandStack() : ItemStack.EMPTY;
+        LivingEntity livingentity = (LivingEntity) entity;
+        ItemStack offhandstack = livingentity.getOffHandStack();
         Identifier offhandidentifier = Registries.ITEM.getId(offhandstack.getItem());
 
+        NbtCompound nbtTag = (entity instanceof LivingEntity ? offhandstack : ItemStack.EMPTY).getNbt();
+        if (nbtTag != null) {
+            cannedfoodinstance.setNbt(nbtTag.copy());
+        }
+
         cannedfoodinstance.setCustomName(Text.literal(("Canned " + (offhandstack.getName().getString()))));
-        cannedfoodinstance.getOrCreateNbt().put("FoodID", NbtString.of(  /*() + ":" +*/ (offhandidentifier.toString())  ));
+        cannedfoodinstance.getOrCreateNbt().put("FoodID", NbtString.of( (offhandidentifier.toString()) ));
+
         return cannedfoodinstance;
     }
 }

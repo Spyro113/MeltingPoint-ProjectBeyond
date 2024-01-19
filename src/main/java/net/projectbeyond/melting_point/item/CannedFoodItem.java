@@ -1,10 +1,12 @@
 package net.projectbeyond.melting_point.item;
 
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
@@ -36,8 +38,14 @@ public class CannedFoodItem extends Item {
         if (entity instanceof PlayerEntity player) {
             ItemStack bowl = new ItemStack(Items.BOWL);
             ItemStack food = new ItemStack(Registries.ITEM.get(new Identifier((stack.getOrCreateNbt().getString("FoodID")).toLowerCase(java.util.Locale.ENGLISH))));
+
             player.getInventory().remove(p -> bowl.getItem() == p.getItem(), 1, player.getInventory());
             food.setCount(1);
+
+            NbtCompound nbtTag = stack.getNbt();
+            if (nbtTag != null) {
+                food.setNbt(nbtTag.copy());
+            }
             player.getInventory().insertStack(food);
         }
     }
