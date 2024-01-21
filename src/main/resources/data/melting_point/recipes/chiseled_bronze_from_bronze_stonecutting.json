@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "melting_point:bronze_block"
+  },
+  "result": "melting_point:chiseled_bronze_block"
+}

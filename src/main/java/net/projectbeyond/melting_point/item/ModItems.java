@@ -60,6 +60,9 @@ public class ModItems {
         entries.add(ModBlocks.BRONZE_BLOCK);
         entries.add(ModBlocks.AGED_BRONZE_BLOCK);
         entries.add(ModBlocks.ANCIENT_BRONZE_BLOCK);
+        entries.add(ModBlocks.CHISELED_BRONZE_BLOCK);
+        entries.add(ModBlocks.AGED_CHISELED_BRONZE_BLOCK);
+        entries.add(ModBlocks.ANCIENT_CHISELED_BRONZE_BLOCK);
         entries.add(ModBlocks.RAW_LEAD_BLOCK);
         entries.add(ModBlocks.LEAD_BLOCK);
         entries.add(ModBlocks.RAW_TUNGSTEN_BLOCK);

@@ -9,6 +9,9 @@
     {"required": false,"id":"melting_point:bronze_block"},
     {"required": false,"id":"melting_point:aged_bronze_block"},
     {"required": false,"id":"melting_point:ancient_bronze_block"},
+    {"required": false,"id":"melting_point:chiseled_bronze_block"},
+    {"required": false,"id":"melting_point:aged_chiseled_bronze_block"},
+    {"required": false,"id":"melting_point:ancient_chiseled_bronze_block"},
 
     {"required": false,"id":"melting_point:lead_ore"},
     {"required": false,"id":"melting_point:deepslate_lead_ore"},
@@ -19,6 +22,12 @@
     {"required": false,"id":"melting_point:deepslate_tungsten_ore"},
     {"required": false,"id":"melting_point:nether_tungsten_ore"},
     {"required": false,"id":"melting_point:raw_tungsten_block"},
-    {"required": false,"id":"melting_point:tungsten_block"}
+    {"required": false,"id":"melting_point:tungsten_block"},
+
+    {"required": false,"id":"melting_point:plated_block"},
+    {"required": false,"id":"melting_point:plated_grate"},
+    {"required": false,"id":"melting_point:plated_grate_slab"},
+    {"required": false,"id":"melting_point:plated_grate_stairs"},
+    {"required": false,"id":"melting_point:plated_railing"}
   ]
 }

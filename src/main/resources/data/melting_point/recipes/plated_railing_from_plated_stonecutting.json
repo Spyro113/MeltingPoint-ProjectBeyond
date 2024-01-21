@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 16,
+  "ingredient": {
+    "item": "melting_point:plated_block"
+  },
+  "result": "melting_point:plated_railing"
+}

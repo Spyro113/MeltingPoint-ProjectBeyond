@@ -14,7 +14,11 @@ public interface Aging extends Degradable<Aging.AgingLevel> {
     public static final Supplier<BiMap<Block, Block>> AGING_LEVEL_INCREASES =
             Suppliers.memoize(() ->
                     ((ImmutableBiMap.Builder)
+                    ((ImmutableBiMap.Builder)
+                    ((ImmutableBiMap.Builder)
                     ((ImmutableBiMap.Builder)ImmutableBiMap.builder().put
+                    (ModBlocks.CHISELED_BRONZE_BLOCK, ModBlocks.AGED_CHISELED_BRONZE_BLOCK)).put
+                    (ModBlocks.AGED_CHISELED_BRONZE_BLOCK, ModBlocks.ANCIENT_CHISELED_BRONZE_BLOCK)).put
                     (ModBlocks.BRONZE_BLOCK, ModBlocks.AGED_BRONZE_BLOCK)).put
                     (ModBlocks.AGED_BRONZE_BLOCK, ModBlocks.ANCIENT_BRONZE_BLOCK)).build());
 

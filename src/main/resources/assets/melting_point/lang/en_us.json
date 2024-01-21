@@ -11,6 +11,9 @@
   "block.melting_point.bronze_block": "Bronze Block",
   "block.melting_point.aged_bronze_block": "Aged Bronze Block",
   "block.melting_point.ancient_bronze_block": "Ancient Bronze Block",
+  "block.melting_point.chiseled_bronze_block": "Chiseled Bronze Block",
+  "block.melting_point.aged_chiseled_bronze_block": "Aged Chiseled Bronze Block",
+  "block.melting_point.ancient_chiseled_bronze_block": "Ancient Chiseled Bronze Block",
 
   "item.melting_point.bronze_sword": "Bronze Sword",
   "item.melting_point.bronze_shovel": "Bronze Shovel",

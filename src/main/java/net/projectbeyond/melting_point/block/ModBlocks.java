@@ -36,6 +36,15 @@ public class ModBlocks {
     public static final Block ANCIENT_BRONZE_BLOCK = registerBlock("ancient_bronze_block", false,
             new AgingBlock(Aging.AgingLevel.ANCIENT,
                     FabricBlockSettings.copyOf(ModBlocks.BRONZE_BLOCK) ));
+    public static final Block CHISELED_BRONZE_BLOCK = registerBlock("chiseled_bronze_block", false,
+            new AgingBlock(Aging.AgingLevel.UNAFFECTED, FabricBlockSettings.create().sounds(BlockSoundGroup.COPPER).strength(5.0f,10.0f).
+                    requiresTool() ));
+    public static final Block AGED_CHISELED_BRONZE_BLOCK = registerBlock("aged_chiseled_bronze_block", false,
+            new AgingBlock(Aging.AgingLevel.AGED,
+                    FabricBlockSettings.copyOf(ModBlocks.BRONZE_BLOCK) ));
+    public static final Block ANCIENT_CHISELED_BRONZE_BLOCK = registerBlock("ancient_chiseled_bronze_block", false,
+            new AgingBlock(Aging.AgingLevel.ANCIENT,
+                    FabricBlockSettings.copyOf(ModBlocks.BRONZE_BLOCK) ));
 
     public static final Block LEAD_ORE = registerBlock("lead_ore", false,
             new Block(FabricBlockSettings.create().sounds(BlockSoundGroup.STONE).strength(2.25f,2.75f).
