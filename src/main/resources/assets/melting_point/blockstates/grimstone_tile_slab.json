@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "melting_point:block/grimstone_tile_slab"
+    },
+    "type=double": {
+      "model": "melting_point:block/grimstone_tiles"
+    },
+    "type=top": {
+      "model": "melting_point:block/grimstone_tile_slab_top"
+    }
+  }
+}

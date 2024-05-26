@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "melting_point:block/grimstone_tiles",
+    "side": "melting_point:block/grimstone_tiles",
+    "top": "melting_point:block/grimstone_tiles"
+  }
+}

@@ -14,18 +14,18 @@ public class AgingBlock extends Block implements Aging {
     public AgingBlock(Aging.AgingLevel agingLevel, AbstractBlock.Settings settings) {
             super(settings);
             this.agingLevel = agingLevel;
-        }
-        @Override
-        public void randomTick (BlockState state, ServerWorld world, BlockPos pos, Random random){
-            this.tickDegradation(state, world, pos, random);
-        }
-        @Override
-        public boolean hasRandomTicks (BlockState state){
-            return Aging.getIncreasedAgingBlock(state.getBlock()).isPresent();
-        }
-        @Override
-        public Aging.AgingLevel getDegradationLevel () {
-            return this.agingLevel;
-        }
     }
+    @Override
+    public void randomTick (BlockState state, ServerWorld world, BlockPos pos, Random random){
+        this.tickDegradation(state, world, pos, random);
+    }
+    @Override
+    public boolean hasRandomTicks (BlockState state){
+        return Aging.getIncreasedAgingBlock(state.getBlock()).isPresent();
+    }
+    @Override
+    public Aging.AgingLevel getDegradationLevel () {
+        return this.agingLevel;
+    }
+}
 

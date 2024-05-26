@@ -27,26 +27,27 @@ public class EmptyTinCanItem extends Item {
         TypedActionResult<ItemStack> ar = super.use(world, player, hand);
         ItemStack stack = ar.getValue();
 
-        canFood(player);
-        if (!player.getAbilities().creativeMode){
-            stack.decrement(1);
-        }
+        canFood(player,stack);
         return ar;
     }
-    public static void canFood (Entity entity) {
+    public static void canFood (Entity entity, ItemStack stack) {
         if (entity == null)
             return;
-        if ((entity instanceof LivingEntity livEntity ? livEntity.getOffHandStack() : ItemStack.EMPTY).isIn(ModTags.Items.CANNABLE) ) {
+
+        LivingEntity livingEntity = (LivingEntity) entity;
+        ItemStack food = livingEntity.getOffHandStack();
+        if (food.isIn(ModTags.Items.CANNABLE)) {
             if (entity instanceof PlayerEntity player) {
                 ItemStack cannedFood = setCannedFoodData(entity);
-                LivingEntity livingEntity = (LivingEntity) entity;
-                ItemStack food = livingEntity.getOffHandStack();
                 ItemStack bowl = new ItemStack(Items.BOWL);
                 cannedFood.setCount(1);
                 player.getInventory().insertStack(cannedFood);
                 player.getInventory().remove(p -> food.getItem() == p.getItem(), 1, player.getInventory());
                 bowl.setCount(1);
                 player.getInventory().insertStack(bowl);
+                if (!player.getAbilities().creativeMode){
+                    stack.decrement(1);
+                }
             }
         }
     }

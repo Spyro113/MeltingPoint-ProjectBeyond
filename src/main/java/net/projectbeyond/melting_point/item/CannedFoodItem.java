@@ -7,13 +7,18 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtElement;
+import net.minecraft.nbt.NbtList;
 import net.minecraft.registry.Registries;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
+
+import java.util.List;
 
 public class CannedFoodItem extends Item {
     public CannedFoodItem(Settings settings) {
@@ -34,8 +39,17 @@ public class CannedFoodItem extends Item {
         return ar;
     }
     private static boolean canOpenCannedFood (Entity entity) {
-        return entity instanceof PlayerEntity hasItem && hasItem.getInventory().contains(new ItemStack(Items.BOWL));
+        PlayerEntity player = (PlayerEntity) entity;
+        boolean slotAvailable = true;
+        int bowlStackSlot = player.getInventory().getSlotWithStack(new ItemStack(Items.BOWL)) ;
+        int bowlStackSize = player.getInventory().getStack(bowlStackSlot).getCount();
+        if (player.getInventory().getEmptySlot() == -1) {
+            slotAvailable = false;
+        }
+        return (player.getInventory().contains(new ItemStack(Items.BOWL))
+                && slotAvailable) || (bowlStackSize == 1);
     }
+
     public static void openCannedFood (Entity entity, ItemStack stack) {
         if (entity instanceof PlayerEntity player) {
             ItemStack bowl = new ItemStack(Items.BOWL);

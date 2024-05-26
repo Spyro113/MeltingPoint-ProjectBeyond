@@ -1,0 +1,78 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "melting_point:block/grimstone"
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 90
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 180
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 270
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "y": 90
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 180,
+        "y": 90
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 270,
+        "y": 90
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "y": 180
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 180,
+        "y": 180
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 270,
+        "y": 180
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "y": 270
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 90,
+        "y": 270
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 180,
+        "y": 270
+      },
+      {
+        "model": "melting_point:block/grimstone",
+        "x": 270,
+        "y": 270
+      }
+    ]
+  }
+}

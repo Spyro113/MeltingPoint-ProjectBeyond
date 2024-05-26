@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "melting_point:block/ash_block_bottom",
+    "up": "melting_point:block/ash_block_top",
+    "north": "melting_point:block/ash_block_side",
+    "east": "melting_point:block/ash_block_side",
+    "south": "melting_point:block/ash_block_side",
+    "west": "melting_point:block/ash_block_side",
+    "particle": "melting_point:block/ash_block_bottom"
+  }
+}

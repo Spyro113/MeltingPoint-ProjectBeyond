@@ -57,21 +57,43 @@ public class ModItems {
     //Sep
     private static void addItemsToBuildingBlocksTab(FabricItemGroupEntries entries){
         entries.add(ModBlocks.TIN_BLOCK);
+
         entries.add(ModBlocks.BRONZE_BLOCK);
         entries.add(ModBlocks.AGED_BRONZE_BLOCK);
         entries.add(ModBlocks.ANCIENT_BRONZE_BLOCK);
         entries.add(ModBlocks.CHISELED_BRONZE_BLOCK);
         entries.add(ModBlocks.AGED_CHISELED_BRONZE_BLOCK);
         entries.add(ModBlocks.ANCIENT_CHISELED_BRONZE_BLOCK);
+
         entries.add(ModBlocks.RAW_LEAD_BLOCK);
         entries.add(ModBlocks.LEAD_BLOCK);
-        entries.add(ModBlocks.RAW_TUNGSTEN_BLOCK);
-        entries.add(ModBlocks.TUNGSTEN_BLOCK);
+
         entries.add(ModBlocks.PLATED_BLOCK);
         entries.add(ModBlocks.PLATED_RAILING);
         entries.add(ModBlocks.PLATED_GRATE);
         entries.add(ModBlocks.PLATED_GRATE_STAIRS);
         entries.add(ModBlocks.PLATED_GRATE_SLAB);
+
+        entries.add(ModBlocks.GRIMSTONE);
+        entries.add(ModBlocks.GRIMSTONE_STAIRS);
+        entries.add(ModBlocks.GRIMSTONE_SLAB);
+        entries.add(ModBlocks.GRIMSTONE_BRICKS);
+        entries.add(ModBlocks.GRIMSTONE_BRICK_STAIRS);
+        entries.add(ModBlocks.GRIMSTONE_BRICK_SLAB);
+        entries.add(ModBlocks.GRIMSTONE_TILES);
+        entries.add(ModBlocks.GRIMSTONE_TILE_STAIRS);
+        entries.add(ModBlocks.GRIMSTONE_TILE_SLAB);
+        entries.add(ModBlocks.POLISHED_GRIMSTONE);
+        entries.add(ModBlocks.POLISHED_GRIMSTONE_STAIRS);
+        entries.add(ModBlocks.POLISHED_GRIMSTONE_SLAB);
+        entries.add(ModBlocks.POLISHED_GRIMSTONE_BRICKS);
+        entries.add(ModBlocks.POLISHED_GRIMSTONE_BRICK_STAIRS);
+        entries.add(ModBlocks.POLISHED_GRIMSTONE_BRICK_SLAB);
+
+        entries.add(ModBlocks.RAW_TUNGSTEN_BLOCK);
+        entries.add(ModBlocks.TUNGSTEN_BLOCK);
+
+
     }
     private static void addItemsToIngredientTab(FabricItemGroupEntries entries){
         entries.add(RAW_TIN);
@@ -92,6 +114,7 @@ public class ModItems {
         entries.add(ModBlocks.DEEPSLATE_TIN_ORE);
         entries.add(ModBlocks.LEAD_ORE);
         entries.add(ModBlocks.DEEPSLATE_LEAD_ORE);
+        entries.add(ModBlocks.GRIMSTONE);
         entries.add(ModBlocks.TUNGSTEN_ORE);
         entries.add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
         entries.add(ModBlocks.NETHER_TUNGSTEN_ORE);

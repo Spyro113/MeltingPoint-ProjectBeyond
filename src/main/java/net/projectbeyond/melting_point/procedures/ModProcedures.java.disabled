@@ -1,0 +1,8 @@
+package net.projectbeyond.melting_point.procedures;
+
+public class ModProcedures {
+    public static void loadProcedures() {
+        new SoulSoilTilling();
+    }
+}
+
