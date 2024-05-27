@@ -128,6 +128,9 @@ public class ModBlocks {
     public static final Block LEAD_PIPE = registerBlock("lead_pipe", false,
             new ConnectingPipe(FabricBlockSettings.create().sounds(BlockSoundGroup.COPPER).strength(5.0f,10.0f).
                     requiresTool().nonOpaque() ));
+    public static final Block COPPER_CHANNEL = registerBlock("copper_channel", false,
+            new ChannelBlock(FabricBlockSettings.create().sounds(BlockSoundGroup.COPPER).strength(5.0f,10.0f).
+                    requiresTool().nonOpaque() ));
     //Sep
     public static boolean never(BlockState state, BlockView world, BlockPos pos) {
         return false;

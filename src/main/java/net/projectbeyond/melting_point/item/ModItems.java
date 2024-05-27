@@ -119,6 +119,9 @@ public class ModItems {
         entries.add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
         entries.add(ModBlocks.NETHER_TUNGSTEN_ORE);
     }
+    private static void addItemsToRedstoneTab(FabricItemGroupEntries entries){
+        entries.add(ModBlocks.COPPER_CHANNEL);
+    }
     private static void addItemsToFunctionalTab(FabricItemGroupEntries entries){
         entries.add(ModBlocks.LEAD_BLOCK);
         entries.add(ModBlocks.MELTING_POT);
@@ -143,6 +146,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItems::addItemsToBuildingBlocksTab);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTab);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::addItemsToNaturalTab);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(ModItems::addItemsToRedstoneTab);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModItems::addItemsToFunctionalTab);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsTab);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatTab);

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "melting_point:block/copper_channel",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "melting_point:block/copper_channel"
+    },
+    "axis=z": {
+      "model": "melting_point:block/copper_channel",
+      "x": 90
+    }
+  }
+}
