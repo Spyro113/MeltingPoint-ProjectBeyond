@@ -5,24 +5,26 @@ import com.google.common.collect.Maps;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.BooleanProperty;
-import net.minecraft.state.property.EnumProperty;
-import net.minecraft.state.property.Properties;
-import net.minecraft.state.property.Property;
+import net.minecraft.state.property.*;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 
 import java.util.Map;
 
 public class ChannelBlock extends Block {
     public static final EnumProperty<Direction.Axis> AXIS;
+    public static final IntProperty POWER = Properties.POWER;
     public static final BooleanProperty NORTH;
     public static final BooleanProperty EAST;
     public static final BooleanProperty SOUTH;
@@ -44,9 +46,10 @@ public class ChannelBlock extends Block {
     
     public ChannelBlock(Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)
+        this.setDefaultState((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)
                 this.stateManager.getDefaultState())
                 .with(AXIS, Direction.Axis.Y))
+                .with(POWER, 0))
                 .with(NORTH, false))
                 .with(EAST, false))
                 .with(SOUTH, false))
@@ -76,23 +79,7 @@ public class ChannelBlock extends Block {
         }
     }
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        BlockView blockView = ctx.getWorld();
-        BlockPos blockPos = ctx.getBlockPos();
-        BlockPos blockPos2 = blockPos.north();
-        BlockPos blockPos3 = blockPos.east();
-        BlockPos blockPos4 = blockPos.south();
-        BlockPos blockPos5 = blockPos.west();
-        BlockPos blockPos6 = blockPos.up();
-        BlockPos blockPos7 = blockPos.down();
-        BlockState blockState = blockView.getBlockState(blockPos2);
-        BlockState blockState2 = blockView.getBlockState(blockPos3);
-        BlockState blockState3 = blockView.getBlockState(blockPos4);
-        BlockState blockState4 = blockView.getBlockState(blockPos5);
-        BlockState blockState5 = blockView.getBlockState(blockPos6);
-        BlockState blockState6 = blockView.getBlockState(blockPos7);
-        return (BlockState)((BlockState)
-                super.getPlacementState(ctx)
-                        .with(AXIS, ctx.getSide().getAxis()));
+        return (BlockState) super.getPlacementState(ctx).with(AXIS, ctx.getSide().getAxis());
     }
 
 
@@ -101,12 +88,43 @@ public class ChannelBlock extends Block {
 
 
 
+    @Override
+    public void onPlaced(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
+        this.updatePower(state, world, pos);
+    }
+
+    @Override
+    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+        super.neighborUpdate(state, world, pos, sourceBlock, sourcePos, notify);
+        this.updatePower(state, world, pos);
+    }
+
+    public void updatePower(BlockState state, World world, BlockPos pos) {
+        if (!world.isClient) {
+            int pow = world.getReceivedRedstonePower(pos);
+            world.setBlockState(pos, state.with(POWER, MathHelper.clamp(pow, 0, 15)), 1 | 2 | 4);
+        }
+    }
+
+    @Override
+    public boolean emitsRedstonePower(BlockState state) {
+        return true;
+    }
+
+    @Override
+    public int getWeakRedstonePower(BlockState state, BlockView world, BlockPos pos, Direction direction) {
+        return Math.max(0, state.get(POWER) - 1);
+    }
+
+
+
 
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(new Property[]{AXIS});
-        builder.add(new Property[]{NORTH, EAST, WEST, SOUTH, UP, DOWN});
+        builder.add(AXIS);
+        builder.add(POWER);
+        builder.add(NORTH, EAST, WEST, SOUTH, UP, DOWN);
     }
 
     static {
