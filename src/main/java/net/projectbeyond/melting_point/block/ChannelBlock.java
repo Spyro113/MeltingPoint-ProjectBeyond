@@ -2,9 +2,7 @@ package net.projectbeyond.melting_point.block;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
@@ -23,6 +21,7 @@ import net.minecraft.world.World;
 import java.util.Map;
 
 public class ChannelBlock extends Block {
+
     public static final EnumProperty<Direction.Axis> AXIS;
     public static final IntProperty POWER = Properties.POWER;
     public static final BooleanProperty NORTH;
@@ -64,29 +63,23 @@ public class ChannelBlock extends Block {
 
     public static BlockState changeRotation(BlockState state, BlockRotation rotation) {
         switch (rotation) {
-            case COUNTERCLOCKWISE_90:
-            case CLOCKWISE_90:
-                switch ((Direction.Axis)state.get(AXIS)) {
-                    case X:
-                        return (BlockState)state.with(AXIS, Direction.Axis.Z);
-                    case Z:
-                        return (BlockState)state.with(AXIS, Direction.Axis.X);
-                    default:
-                        return state;
-                }
-            default:
+            case COUNTERCLOCKWISE_90, CLOCKWISE_90 -> {
+                return switch ((Direction.Axis) state.get(AXIS)) {
+                    case X -> (BlockState) state.with(AXIS, Direction.Axis.Z);
+                    case Z -> (BlockState) state.with(AXIS, Direction.Axis.X);
+                    default -> state;
+                };
+            }
+            default -> {
                 return state;
+            }
         }
     }
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return (BlockState) super.getPlacementState(ctx).with(AXIS, ctx.getSide().getAxis());
     }
 
-
-
-
-
-
+//======================================================================================================================
 
     @Override
     public void onPlaced(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
@@ -99,10 +92,12 @@ public class ChannelBlock extends Block {
         this.updatePower(state, world, pos);
     }
 
+
+
     public void updatePower(BlockState state, World world, BlockPos pos) {
         if (!world.isClient) {
-            int pow = world.getReceivedRedstonePower(pos);
-            world.setBlockState(pos, state.with(POWER, MathHelper.clamp(pow, 0, 15)), 1 | 2 | 4);
+            int power = world.getReceivedRedstonePower(pos);
+            world.setBlockState(pos, state.with(POWER, MathHelper.clamp(power, 0, 15)), 1 | 2 | 4);
         }
     }
 
@@ -110,15 +105,53 @@ public class ChannelBlock extends Block {
     public boolean emitsRedstonePower(BlockState state) {
         return true;
     }
-
     @Override
     public int getWeakRedstonePower(BlockState state, BlockView world, BlockPos pos, Direction direction) {
-        return Math.max(0, state.get(POWER) - 1);
+        if ((state.get(POWER) != 0) && (
+         ChannelBlock.getDirectionFromAxis(state) == direction ||
+         ChannelBlock.getDirectionFromAxis(state).getOpposite() == direction)) {
+            return Math.max(0, state.get(POWER) - 1);
+        }
+        return 0;
+    }
+/*
+    @Override
+    public int getStrongRedstonePower(BlockState state, BlockView world, BlockPos pos, Direction direction) {
+
+        Direction axis = ChannelBlock.getDirectionFromAxis(state);
+        BlockPos adjPos = pos.offset(axis);
+        BlockState adjState = world.getBlockState(adjPos);
+        BlockPos adjPos2 = pos.offset(axis.getOpposite());
+        BlockState adjState2 = world.getBlockState(adjPos2);
+
+        if (isShapeFullCube(adjState, world, adjPos)){
+            return  state.getWeakRedstonePower(world, pos, direction);
+        }
+        if (isShapeFullCube(adjState2, world, adjPos2)){
+            return  state.getWeakRedstonePower(world, pos, direction);
+        }
+        return 0;
+    }
+*/
+
+
+    public static Direction getDirectionFromAxis (BlockState state) {
+
+        switch (state.get(AXIS)) {
+            case Y: {
+                return Direction.UP;
+            }
+            case X: {
+                return Direction.WEST;
+            }
+            case Z: {
+                return Direction.NORTH;
+            }
+        }
+        return null;
     }
 
-
-
-
+//======================================================================================================================
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {

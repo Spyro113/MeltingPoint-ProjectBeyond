@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "melting_point:block/bronze_block",
+    "end": "melting_point:block/chiseled_bronze_top",
     "side": "melting_point:block/chiseled_bronze_block"
   }
 }
