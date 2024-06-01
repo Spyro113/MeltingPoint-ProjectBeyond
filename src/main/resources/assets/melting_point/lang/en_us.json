@@ -64,5 +64,6 @@
   "item.melting_point.canned_food": "Canned of Food",
   "item.melting_point.crude_iron": "Crude Iron",
   "block.melting_point.melting_pot": "Melting Pot",
-  "block.melting_point.lead_pipe": "Lead Pipe"
+  "block.melting_point.lead_pipe": "Lead Pipe",
+  "block.melting_point.copper_channel": "Copper Channel"
 }
