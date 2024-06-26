@@ -139,14 +139,6 @@ public class ChannelBlock extends Block{
         return null;
     }
 
-   /* public void updatePower(BlockState state, World world, BlockPos pos) {
-        if (!world.isClient) {
-            int power = world.getReceivedRedstonePower(pos);
-            world.setBlockState(pos, state.with(POWER, MathHelper.clamp(power, 0, 15)), 1 | 2 | 4);
-        }
-    }*/
-
-
     private void updatePower(BlockState state, World world, BlockPos pos) {
         int power = this.getReceivedRedstonePower(state, world, pos);
         if (state.get(POWER) != power) {
