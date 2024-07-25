@@ -1,0 +1,9 @@
+{
+  "multipart": [
+
+    {"apply": {"model": "melting_point:block/siding_block", "y": 180},"when": {"north":"true"}},
+    {"apply": {"model": "melting_point:block/siding_block", "y": 270},"when": {"east":"true"}},
+    {"apply": {"model": "melting_point:block/siding_block", "y": 0},"when": {"south":"true"}},
+    {"apply": {"model": "melting_point:block/siding_block", "y": 90},"when": {"west":"true"}}
+  ]
+}

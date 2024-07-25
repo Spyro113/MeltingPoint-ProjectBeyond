@@ -129,7 +129,10 @@ public class ModBlocks {
             new ConnectingPipe(FabricBlockSettings.create().sounds(BlockSoundGroup.COPPER).strength(5.0f,10.0f).
                     requiresTool().nonOpaque() ));
     public static final Block COPPER_CHANNEL = registerBlock("copper_channel", false,
-            new ChannelBlock(FabricBlockSettings.create().sounds(BlockSoundGroup.COPPER).strength(5.0f,10.0f).
+            new ChannelBlock(FabricBlockSettings.create().sounds(BlockSoundGroup.COPPER).strength(3.0f,6.0f).
+                    requiresTool().nonOpaque() ));
+    public static final Block SIDING_BLOCK = registerBlock("siding_block", false,
+            new SidingBlock(FabricBlockSettings.create().sounds(BlockSoundGroup.COPPER).strength(2.0f,4.0f).
                     requiresTool().nonOpaque() ));
     //Sep
     public static boolean never(BlockState state, BlockView world, BlockPos pos) {
